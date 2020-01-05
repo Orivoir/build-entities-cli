@@ -1,7 +1,7 @@
 {
   "name": "build-entities-cli",
   "version": "0.6.0",
-  "description": "",
+  "description": "command line interface of build-entities generate entity form your terminal",
   "main": "build-entities-cli.js",
   "bin": {
     "build-entities": "build-entities-cli.js"
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "build-directories": "^1.0.1",
-    "build-entities": "file:../build-entities",
+    "build-entities": "^1.0.0",
     "chalk": "^3.0.0",
     "readline-sync": "^1.4.10"
   }

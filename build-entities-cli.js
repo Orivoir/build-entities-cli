@@ -4,8 +4,6 @@ const args = process.argv.slice( 2 , ) ;
 let entityName = args[ 0 ] ;
 const devUse = args.slice( -1 , )[0] ;
 
-console.log(devUse );
-
 if( !entityName ) {
 
     const askEntityName = require('./lib/ask-entity-name') ;
@@ -25,6 +23,8 @@ if( checker ) {
     const askProperty = require('./lib/ask-property/endpoint') ;
 
     const properties = askProperty() ;
+
+    require('./lib/ask-directory-build-file')() ;
 
     output( properties ) ;
 
