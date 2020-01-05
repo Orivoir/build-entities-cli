@@ -1,0 +1,27 @@
+{
+  "name": "build-entities-cli",
+  "version": "0.6.0",
+  "description": "",
+  "main": "build-entities-cli.js",
+  "bin": {
+    "build-entities": "build-entities-cli.js"
+  },
+  "scripts": {
+    "test": "mocha",
+    "coverage": "nyc npm test"
+  },
+  "keywords": [],
+  "author": "S.Gaborieau <sam.gabor@hotmail.com>",
+  "license": "BSD-2-CLAUSE",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0",
+    "nyc": "^15.0.0"
+  },
+  "dependencies": {
+    "build-directories": "^1.0.1",
+    "build-entities": "file:../build-entities",
+    "chalk": "^3.0.0",
+    "readline-sync": "^1.4.10"
+  }
+}
